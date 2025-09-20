@@ -27,5 +27,5 @@ After installation, you can run follow these steps:
 # macOS (arm64)
 sudo xattr -r -d com.apple.quarantine /opt/homebrew/bin/nvim /opt/homebrew/Caskroom/neovim-nightly/latest/nvim-macos-arm64/lib/nvim/parser/*.so
 # macOS (x86_64)
-sudo xattr -r -d com.apple.quarantine /usr/local/bin/nvim /usr/local/Caskroom/neovim-nightly/latest/nvim-macos-arm64/lib/nvim/parser/*.so
+sudo xattr -r -d com.apple.quarantine /usr/local/bin/nvim /usr/local/Caskroom/neovim-nightly/latest/nvim-macos-x86_64/lib/nvim/parser/*.so
 ```
