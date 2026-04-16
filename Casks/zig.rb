@@ -1,16 +1,16 @@
 cask 'zig' do
   architecture = Hardware::CPU.intel? ? :x86_64 : :aarch64
-  version '0.15.2'
+  version '0.16.0'
 
   name 'Zig Language'
   homepage 'https://ziglang.org/'
 
   case architecture
   when :x86_64
-    sha256 "375b6909fc1495d16fc2c7db9538f707456bfc3373b14ee83fdd3e22b3d43f7f"
+    sha256 "0387557ed1877bc6a2e1802c8391953baddba76081876301c522f52977b52ba7"
     url "https://ziglang.org/download/#{version}/zig-x86_64-macos-#{version}.tar.xz"
   when :aarch64
-    sha256 "3cc2bab367e185cdfb27501c4b30b1b0653c28d9f73df8dc91488e66ece5fa6b"
+    sha256 "b23d70deaa879b5c2d486ed3316f7eaa53e84acf6fc9cc747de152450d401489"
     url "https://ziglang.org/download/#{version}/zig-aarch64-macos-#{version}.tar.xz"
   else
     raise "Unsupported architecture"
